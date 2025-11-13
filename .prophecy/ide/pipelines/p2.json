@@ -69,7 +69,27 @@
       },
       "properties" : {
         "columnName" : "",
-        "relation_name" : [ ],
+        "relation_name" : [ "" ],
+        "_oldMacroProperties" : {
+          "macroName" : "XMLParse",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "['']"
+          }, {
+            "name" : "columnName",
+            "value" : ""
+          }, {
+            "name" : "parsingMethod",
+            "value" : "parseFromSampleRecord"
+          }, {
+            "name" : "sampleRecord",
+            "value" : null
+          }, {
+            "name" : "sampleSchema",
+            "value" : null
+          } ]
+        },
         "parsingMethod" : "parseFromSampleRecord",
         "sampleSchema" : null,
         "sampleRecord" : null
@@ -152,6 +172,40 @@
           },
           "slug" : "out0"
         } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "lcfwlW3lJA_1KUSyyCsPy$$BfocGHxGNw0Blr90riw0b" : {
+      "id" : "lcfwlW3lJA_1KUSyyCsPy$$BfocGHxGNw0Blr90riw0b",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email",
+        "x" : -1260,
+        "y" : -700,
+        "phase" : 0
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "",
+        "includeData" : false,
+        "fileName" : "",
+        "to" : [ "gupta@gmail.com" ],
+        "connection" : {
+          "kind" : "smtp",
+          "properties" : {
+            "id" : "smtp_1"
+          },
+          "type" : "connector"
+        },
+        "fileFormat" : "",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OJJrBFdrYx31UrSpcXa1z$$LnwMEsghuwmL1bTXXXqjF",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
         "isCustomOutputSchema" : false
       }
     }
