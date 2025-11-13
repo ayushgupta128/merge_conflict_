@@ -12,7 +12,7 @@ with DAG(Schedule = Schedule, SensorSchedule = SensorSchedule):
         subject = "", 
         includeData = False, 
         fileName = "", 
-        to = ["gupta@gmail.com"], 
+        to = ["ayush@gmail.com"], 
         connection = Connection(kind = "smtp", id = "smtp_1"), 
         fileFormat = "", 
         hasTemplate = False

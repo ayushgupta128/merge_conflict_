@@ -171,12 +171,11 @@
             } ]
           },
           "slug" : "out0"
-        } ],
-        "isCustomOutputSchema" : false
+        } ]
       }
     },
-    "lcfwlW3lJA_1KUSyyCsPy$$BfocGHxGNw0Blr90riw0b" : {
-      "id" : "lcfwlW3lJA_1KUSyyCsPy$$BfocGHxGNw0Blr90riw0b",
+    "ZxONuUuWXzDSVyfCsK-14$$6-jy63KGH54N-khG5nQOa" : {
+      "id" : "ZxONuUuWXzDSVyfCsK-14$$6-jy63KGH54N-khG5nQOa",
       "component" : "Email",
       "metadata" : {
         "label" : "send_email",
@@ -189,7 +188,7 @@
         "subject" : "",
         "includeData" : false,
         "fileName" : "",
-        "to" : [ "gupta@gmail.com" ],
+        "to" : [ "ayush@gmail.com" ],
         "connection" : {
           "kind" : "smtp",
           "properties" : {
@@ -202,7 +201,7 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "OJJrBFdrYx31UrSpcXa1z$$LnwMEsghuwmL1bTXXXqjF",
+          "id" : "krF4dAJ9C0AWQdYxNiaqt$$xlwdoDOQmxlMXqr4jxDpa",
           "slug" : "in0"
         } ],
         "outputs" : [ ],
