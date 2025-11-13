@@ -1,6 +1,6 @@
 name: merge_test1
 description: ''
-version: 0.0.2
+version: 0.0.3
 author: g.ayush@prophecy.io
 language: sql
 buildSystem: ''
