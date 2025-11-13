@@ -23,7 +23,37 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/p1__Aggregate_0:
+    name: p1__Aggregate_0
+    schema: null
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - models/p1/p1__Aggregate_0.sql
+    - .prophecy/ide/models/p1__Aggregate_0.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-11-13 04:39:05'
+  .prophecy/metadata/sqlmodels/p1__Aggregate_1:
+    name: p1__Aggregate_1
+    schema: null
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - models/p1/p1__Aggregate_1.sql
+    - .prophecy/ide/models/p1__Aggregate_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2025-11-13 04:39:05'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -88,6 +118,7 @@ sqlOrchestratorPipelines:
     files:
     - models/p1/p1__Aggregate_1.sql
     - models/p1/schema.yml
+    - models/p1/p1__Aggregate_0.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-13 02:59:49'
