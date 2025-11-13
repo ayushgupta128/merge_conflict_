@@ -133,7 +133,40 @@
             } ]
           },
           "slug" : "out0"
+        } ]
+      }
+    },
+    "ZxONuUuWXzDSVyfCsK-14$$6-jy63KGH54N-khG5nQOa" : {
+      "id" : "ZxONuUuWXzDSVyfCsK-14$$6-jy63KGH54N-khG5nQOa",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "send_email",
+        "x" : -1260,
+        "y" : -700,
+        "phase" : 0
+      },
+      "properties" : {
+        "body" : "",
+        "subject" : "",
+        "includeData" : false,
+        "fileName" : "",
+        "to" : [ "ayush@gmail.com" ],
+        "connection" : {
+          "kind" : "smtp",
+          "properties" : {
+            "id" : "smtp_1"
+          },
+          "type" : "connector"
+        },
+        "fileFormat" : "",
+        "hasTemplate" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "krF4dAJ9C0AWQdYxNiaqt$$xlwdoDOQmxlMXqr4jxDpa",
+          "slug" : "in0"
         } ],
+        "outputs" : [ ],
         "isCustomOutputSchema" : false
       }
     }

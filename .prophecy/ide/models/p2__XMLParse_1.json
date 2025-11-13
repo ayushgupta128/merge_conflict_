@@ -59,7 +59,27 @@
       },
       "properties" : {
         "columnName" : "",
-        "relation_name" : [ ],
+        "relation_name" : [ "" ],
+        "_oldMacroProperties" : {
+          "macroName" : "XMLParse",
+          "projectName" : "prophecy_basics",
+          "parameters" : [ {
+            "name" : "relation_name",
+            "value" : "['']"
+          }, {
+            "name" : "columnName",
+            "value" : ""
+          }, {
+            "name" : "parsingMethod",
+            "value" : "parseFromSampleRecord"
+          }, {
+            "name" : "sampleRecord",
+            "value" : null
+          }, {
+            "name" : "sampleSchema",
+            "value" : null
+          } ]
+        },
         "parsingMethod" : "parseFromSampleRecord",
         "sampleSchema" : null,
         "sampleRecord" : null
