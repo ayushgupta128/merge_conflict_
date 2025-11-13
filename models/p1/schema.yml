@@ -1,6 +1,1 @@
----
 version: 2
-models:
-- name: "p1__Aggregate_1"
-  tags:
-  - "prophecy_temp"
