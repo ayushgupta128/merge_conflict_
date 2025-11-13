@@ -1,0 +1,64 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false
+  },
+  "processes" : {
+    "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x" : {
+      "id" : "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "x" : -700,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "am999rbhTw1nQjjmYCUfg$$67I51FyLeKbCoTrrxYz0O",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

@@ -1,0 +1,92 @@
+{
+  "id" : "p2__Aggregate_0",
+  "metainfo" : {
+    "label" : "p2__Aggregate_0",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"ayush_demos\"",
+        "schema" : "\"demos\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "Aggregate_0_K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4" : {
+      "id" : "Aggregate_0_K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "Aggregate_0"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM Aggregate_0\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x" : {
+      "id" : "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "x" : -700,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "aggregate" : [ ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ ],
+        "groupBy" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "am999rbhTw1nQjjmYCUfg$$67I51FyLeKbCoTrrxYz0O",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x_Aggregate_0_K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+    "source" : "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x",
+    "sourcePort" : "K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+    "target" : "Aggregate_0_K7EgycDgI2Qg0-yRi5DUr$$g1syDYOKVPVCgY6Qhm9A4",
+    "targetPort" : "input_port_0"
+  } ],
+  "component" : "Model"
+}
