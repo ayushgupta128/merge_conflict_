@@ -43,6 +43,7 @@ sqlMacros:
     author: ayush.779gupta@gmail.com
     files:
     - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
     createdAt: '2025-11-13 02:51:50'
 sqlSeeds: {}
 sqlSources: {}
@@ -73,8 +74,8 @@ sqlOrchestratorPipelines:
     description: null
     author: ayush.779gupta@gmail.com
     files:
-    - models/p1/p1__Aggregate_0.sql
     - models/p1/schema.yml
+    - models/p1/p1__Aggregate_0.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-13 02:51:50'
