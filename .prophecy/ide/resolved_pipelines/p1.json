@@ -1,0 +1,57 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false
+  },
+  "processes" : {
+    "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu" : {
+      "id" : "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p1__Aggregate_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p1__Aggregate_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "Aggregate_0_gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj", "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p1__Aggregate_0_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}
