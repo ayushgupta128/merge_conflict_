@@ -1,7 +1,7 @@
 {
-  "id" : "p1__Aggregate_0",
+  "id" : "p2__XMLParse_1",
   "metainfo" : {
-    "label" : "p1__Aggregate_0",
+    "label" : "p2__XMLParse_1",
     "autoLayout" : true,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -18,17 +18,17 @@
     "version" : 3
   },
   "processes" : {
-    "Aggregate_0_gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj" : {
-      "id" : "Aggregate_0_gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
+    "XMLParse_1_liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5" : {
+      "id" : "XMLParse_1_liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "Aggregate_0"
+        "label" : "XMLParse_1"
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "\nSELECT *\n\nFROM Aggregate_0\n\n",
+        "query" : "\nSELECT *\n\nFROM XMLParse_1\n\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -48,32 +48,29 @@
         "autoUpdateOnRun" : false
       }
     },
-    "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu" : {
-      "id" : "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu",
-      "component" : "Aggregate",
+    "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk" : {
+      "id" : "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk",
+      "component" : "XMLParse",
       "metadata" : {
-        "label" : "Aggregate_0",
+        "label" : "XMLParse_1",
         "x" : -560,
-        "y" : -280,
+        "y" : -420,
         "phase" : 0
       },
       "properties" : {
-        "aggregate" : [ ],
-        "allowSelection" : true,
-        "condition" : {
-          "expression" : ""
-        },
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ ],
-        "groupBy" : [ ]
+        "columnName" : "",
+        "relation_name" : [ ],
+        "parsingMethod" : "parseFromSampleRecord",
+        "sampleSchema" : null,
+        "sampleRecord" : null
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "iyhvu3lLfLKgxXszl8LVC$$iqHYwGXFW8EeyYwLAFSSk",
+          "id" : "4t9BQ79FxK1bFNIcrqfxX$$YjFTPo9yj9QRpafGMshvW",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
+          "id" : "liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -82,10 +79,10 @@
     }
   },
   "connections" : [ {
-    "id" : "conn_dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu_Aggregate_0_gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
-    "source" : "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu",
-    "sourcePort" : "gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
-    "target" : "Aggregate_0_gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
+    "id" : "conn_WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk_XMLParse_1_liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
+    "source" : "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk",
+    "sourcePort" : "liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
+    "target" : "XMLParse_1_liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
     "targetPort" : "input_port_0"
   } ],
   "component" : "Model"

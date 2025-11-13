@@ -6,7 +6,7 @@
   })
 }}
 
-WITH Aggregate_0 AS (
+WITH Aggregate_1 AS (
 
   SELECT * 
   
@@ -16,4 +16,4 @@ WITH Aggregate_0 AS (
 
 SELECT *
 
-FROM Aggregate_0
+FROM Aggregate_1

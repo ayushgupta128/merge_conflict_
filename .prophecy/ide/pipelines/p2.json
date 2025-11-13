@@ -57,6 +57,103 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk" : {
+      "id" : "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk",
+      "component" : "XMLParse",
+      "metadata" : {
+        "label" : "XMLParse_1",
+        "x" : -560,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnName" : "",
+        "relation_name" : [ ],
+        "parsingMethod" : "parseFromSampleRecord",
+        "sampleSchema" : null,
+        "sampleRecord" : null
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "4t9BQ79FxK1bFNIcrqfxX$$YjFTPo9yj9QRpafGMshvW",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      },
+      "componentInfo" : {
+        "gemId" : "XMLParse_prophecy_basics",
+        "name" : "XMLParse",
+        "projectName" : "prophecy_basics",
+        "sourceProjectName" : "prophecy_basics",
+        "sourceProjectVersion" : "1.0.2"
+      }
+    },
+    "7-JY4W2rIDha70ZDKJdwK$$v4fUJPm6BjezFz_IDvF5c" : {
+      "id" : "7-JY4W2rIDha70ZDKJdwK$$v4fUJPm6BjezFz_IDvF5c",
+      "component" : "Directory",
+      "metadata" : {
+        "label" : "Directory_1",
+        "x" : -420,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "integration" : "",
+        "path" : ""
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-WCq1QTadJNRBbr0Vt3go$$z3YsAoN8Cxhz9ObvjFxlH",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "path",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "size_in_bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "creation_time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "modification_time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "parent_directory",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "file_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

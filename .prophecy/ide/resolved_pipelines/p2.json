@@ -50,6 +50,92 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk" : {
+      "id" : "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p2__XMLParse_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p2__XMLParse_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "XMLParse_1_liLiX3CHwFqDZHMBUU_Rd$$Do2yhWI-N0mjVCatcc7N5", "WqCoECJogQn852ondwwwJ$$rPQVQOAsSu_VKf3BWG7uk" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p2__XMLParse_1_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "7-JY4W2rIDha70ZDKJdwK$$v4fUJPm6BjezFz_IDvF5c" : {
+      "id" : "7-JY4W2rIDha70ZDKJdwK$$v4fUJPm6BjezFz_IDvF5c",
+      "component" : "Directory",
+      "metadata" : {
+        "label" : "Directory_1",
+        "x" : -420,
+        "y" : -420,
+        "phase" : 0
+      },
+      "properties" : {
+        "integration" : "",
+        "path" : ""
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "-WCq1QTadJNRBbr0Vt3go$$z3YsAoN8Cxhz9ObvjFxlH",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "path",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "size_in_bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "creation_time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "modification_time",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "parent_directory",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "file_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
   "connections" : [ ],

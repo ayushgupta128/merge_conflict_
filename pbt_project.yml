@@ -76,6 +76,7 @@ sqlOrchestratorPipelines:
     files:
     - models/p2/schema.yml
     - models/p2/p2__Aggregate_0.sql
+    - models/p2/p2__XMLParse_1.sql
     - .prophecy/ide/pipelines/p2.json
     - pipelines/p2.py
     createdAt: '2025-11-13 02:52:01'
@@ -85,8 +86,8 @@ sqlOrchestratorPipelines:
     description: null
     author: g.ayush@prophecy.io
     files:
+    - models/p1/p1__Aggregate_1.sql
     - models/p1/schema.yml
-    - models/p1/p1__Aggregate_0.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-13 02:59:49'

@@ -4,3 +4,6 @@ models:
 - name: "p2__Aggregate_0"
   tags:
   - "prophecy_temp"
+- name: "p2__XMLParse_1"
+  tags:
+  - "prophecy_temp"

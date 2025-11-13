@@ -27,13 +27,114 @@
     "isTranspiledPipeline" : false
   },
   "processes" : {
-    "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu" : {
-      "id" : "dFO6uZR71I3-pSfd1cBet$$aD5INsu3XCvRe5F2Fxhzu",
+    "S897i4RRzNOXqSoy6VaGl$$AAEM4pcEELTRC2iNQ5VQL" : {
+      "id" : "S897i4RRzNOXqSoy6VaGl$$AAEM4pcEELTRC2iNQ5VQL",
+      "component" : "OrchestrationSource",
+      "kind" : "GCSSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_1",
+        "x" : -1260,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "connector" : {
+          "kind" : "GCS",
+          "properties" : { },
+          "type" : "connector"
+        },
+        "properties" : {
+          "fileOperationProperties" : {
+            "fileLoadingType" : "filepath",
+            "includeFileNameColumn" : true
+          }
+        },
+        "format" : {
+          "properties" : {
+            "allowLazyQuotes" : false,
+            "allowEmptyColumnNames" : true,
+            "separator" : ",",
+            "nullValue" : "",
+            "encoding" : "UTF-8",
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        },
+        "isNew" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "eRT8mf6hcBDMJtkmdvFSX$$1zZ0KZ5EeBzy6cLn4Trqx",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "rYc2w_gxFfq3QIObZ7jjF$$4i0ilmSqBgehlfxDnm8B8" : {
+      "id" : "rYc2w_gxFfq3QIObZ7jjF$$4i0ilmSqBgehlfxDnm8B8",
+      "component" : "PowerBIWrite",
+      "metadata" : {
+        "label" : "PowerBIWrite_1",
+        "x" : -1120,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "workspaceName" : "",
+        "datasetType" : "datasetName",
+        "datasetTables" : [ {
+          "inputAlias" : "in0",
+          "tableName" : "",
+          "writeMode" : "overwrite",
+          "overwriteSchema" : "No"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ED8MaVxxoREap8gwXJrzE$$bePzYDLpQk-47OIMUHRYQ",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "dnDs3BISSF1-_FdlDNAzZ$$Kqh9EAGv-mYAiKHVvf2iG" : {
+      "id" : "dnDs3BISSF1-_FdlDNAzZ$$Kqh9EAGv-mYAiKHVvf2iG",
+      "component" : "PowerBIWrite",
+      "metadata" : {
+        "label" : "PowerBIWrite_2",
+        "x" : -980,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "workspaceName" : "",
+        "datasetType" : "datasetName",
+        "datasetTables" : [ {
+          "inputAlias" : "in0",
+          "tableName" : "",
+          "writeMode" : "overwrite",
+          "overwriteSchema" : "No"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "EkxvljokW8zdV0D96IhGs$$74V__umxm2zevmgZN8zc4",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "lsOIkQL3Z5HDA-_S7YESk$$mDjmCFap-yBaV_YD3qo4f" : {
+      "id" : "lsOIkQL3Z5HDA-_S7YESk$$mDjmCFap-yBaV_YD3qo4f",
       "component" : "Aggregate",
       "metadata" : {
-        "label" : "Aggregate_0",
-        "x" : -560,
-        "y" : -280,
+        "label" : "Aggregate_1",
+        "x" : -840,
+        "y" : -560,
         "phase" : 0
       },
       "properties" : {
@@ -48,11 +149,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "iyhvu3lLfLKgxXszl8LVC$$iqHYwGXFW8EeyYwLAFSSk",
+          "id" : "_7PcateioX8koNzv3080b$$VDdk_mlHX47Hs-lBaY4cW",
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "gi-NIi-yZh7noAAN3W__B$$_XEohZF-XAQNC5o3dE7fj",
+          "id" : "n8uQD2N65h8nFaKaifOYG$$VHHizVphpN3kxKdaCknSh",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
