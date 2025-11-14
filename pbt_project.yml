@@ -76,7 +76,78 @@ sqlMacros:
     - .prophecy/ide/macros/prophecy_tmp_source.json
     createdAt: '2025-11-13 02:52:01'
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/ayush_demos_demos:
+    name: ayush_demos.demos
+    description: null
+    author: g.ayush@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2025-11-14 06:12:30'
+    tables:
+    - name: customer
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: customer_id
+          dataType:
+            type: String
+        - name: event_type
+          dataType:
+            type: String
+        - name: event_time
+          dataType:
+            type: Timestamp
+        - name: country
+          dataType:
+            type: String
+        - name: city
+          dataType:
+            type: String
+      description: null
+      author: g.ayush@prophecy.io
+      createdAt: '2025-11-14 06:12:30'
+      tableType: table
+    - name: new_sales
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: tx_date
+          dataType:
+            type: Date
+        - name: amount
+          dataType:
+            type: Integer
+      description: null
+      author: g.ayush@prophecy.io
+      createdAt: '2025-11-14 06:13:20'
+      tableType: table
+    - name: tile
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: region
+          dataType:
+            type: String
+        - name: category
+          dataType:
+            type: String
+        - name: customer_id
+          dataType:
+            type: String
+        - name: sale_date
+          dataType:
+            type: Date
+        - name: sale_amount
+          dataType:
+            type: Bigint
+      description: null
+      author: g.ayush@prophecy.io
+      createdAt: '2025-11-14 06:19:21'
+      tableType: table
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

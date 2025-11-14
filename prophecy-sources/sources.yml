@@ -1,0 +1,52 @@
+---
+version: 2
+sources:
+- name: "ayush_demos.demos"
+  database: "ayush_demos"
+  schema: "demos"
+  tables:
+  - name: "customer"
+    columns:
+    - name: "customer_id"
+      dataType:
+        type: "String"
+    - name: "event_type"
+      dataType:
+        type: "String"
+    - name: "event_time"
+      dataType:
+        type: "Timestamp"
+    - name: "country"
+      dataType:
+        type: "String"
+    - name: "city"
+      dataType:
+        type: "String"
+    type: "table"
+  - name: "new_sales"
+    columns:
+    - name: "tx_date"
+      dataType:
+        type: "Date"
+    - name: "amount"
+      dataType:
+        type: "Integer"
+    type: "table"
+  - name: "tile"
+    columns:
+    - name: "region"
+      dataType:
+        type: "String"
+    - name: "category"
+      dataType:
+        type: "String"
+    - name: "customer_id"
+      dataType:
+        type: "String"
+    - name: "sale_date"
+      dataType:
+        type: "Date"
+    - name: "sale_amount"
+      dataType:
+        type: "Bigint"
+    type: "table"

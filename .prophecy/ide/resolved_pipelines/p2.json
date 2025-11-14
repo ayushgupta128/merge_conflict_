@@ -27,6 +27,94 @@
     "isTranspiledPipeline" : false
   },
   "processes" : {
+    "ccmxm0ZPfpchj0L0EWtpF$$7gmObsIMUCVfX1jMmvdKB" : {
+      "id" : "ccmxm0ZPfpchj0L0EWtpF$$7gmObsIMUCVfX1jMmvdKB",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "tile",
+        "x" : -1540,
+        "y" : -560,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "tile",
+          "sourceType" : "Table",
+          "sourceName" : "ayush_demos.demos",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "L_vgQBi-oOyJ3BbUoh1uS$$xtlheR_JaM5UAhz7KTYxj",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "4dvfozFK2dWKPaJu0WLNg$$lgy4k7Gq42du4QduBteFU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "dJJJXK6nklnuIRZRIqkwA$$wHb5WKYIeNtSS28eDznXJ" : {
+      "id" : "dJJJXK6nklnuIRZRIqkwA$$wHb5WKYIeNtSS28eDznXJ",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "customer",
+        "x" : -1540,
+        "y" : -840,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customer",
+          "sourceType" : "Table",
+          "sourceName" : "ayush_demos.demos",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "_vbbLs-M3M3JwiYJ3yy2K$$Cu6Mtue2ic7KDp8TjpWOT",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "4BrO1euZ8WMEWvYEMGvUB$$HMLn3pMrrBMdvD5b5PZym",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "event_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "event_time",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "country",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "city",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
     "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x" : {
       "id" : "8eE5xp5pdOslwRWgby2z3$$hSIxKvesOLkzxVJMbP-0x",
       "component" : "Model",
@@ -167,6 +255,50 @@
           "slug" : "in0"
         } ],
         "outputs" : [ ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "WSPdyTQkEMmcAMim7A5Ut$$AYykNmpfVKudtAjUVO6l2" : {
+      "id" : "WSPdyTQkEMmcAMim7A5Ut$$AYykNmpfVKudtAjUVO6l2",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "new_sales",
+        "x" : -1540,
+        "y" : -700,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "new_sales",
+          "sourceType" : "Table",
+          "sourceName" : "ayush_demos.demos",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5skLJoUva4kUaBiO46dkE$$nJJLI2KrvS-9kb86Y-TwU",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "poJ22KhWVArDt4nBaDEVw$$JLFZRofQrU9wLSVHwgYWv",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "tx_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
         "isCustomOutputSchema" : false
       }
     }
