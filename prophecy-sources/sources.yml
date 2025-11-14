@@ -32,21 +32,3 @@ sources:
       dataType:
         type: "Integer"
     type: "table"
-  - name: "tile"
-    columns:
-    - name: "region"
-      dataType:
-        type: "String"
-    - name: "category"
-      dataType:
-        type: "String"
-    - name: "customer_id"
-      dataType:
-        type: "String"
-    - name: "sale_date"
-      dataType:
-        type: "Date"
-    - name: "sale_amount"
-      dataType:
-        type: "Bigint"
-    type: "table"
