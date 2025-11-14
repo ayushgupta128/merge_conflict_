@@ -51,6 +51,36 @@
         } ],
         "outputs" : [ {
           "id" : "4dvfozFK2dWKPaJu0WLNg$$lgy4k7Gq42du4QduBteFU",
+          "schema" : {
+            "entityType" : "",
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "region",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "category",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "sale_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "sale_amount",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            } ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false
