@@ -124,30 +124,6 @@ sqlSources:
       author: g.ayush@prophecy.io
       createdAt: '2025-11-14 06:13:20'
       tableType: table
-    - name: tile
-      schema:
-        entityType: ''
-        providerType: databricks
-        fields:
-        - name: region
-          dataType:
-            type: String
-        - name: category
-          dataType:
-            type: String
-        - name: customer_id
-          dataType:
-            type: String
-        - name: sale_date
-          dataType:
-            type: Date
-        - name: sale_amount
-          dataType:
-            type: Bigint
-      description: null
-      author: g.ayush@prophecy.io
-      createdAt: '2025-11-14 07:01:19'
-      tableType: table
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
