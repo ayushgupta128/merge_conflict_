@@ -5,19 +5,6 @@ sources:
   database: "ayush_demos"
   schema: "demos"
   tables:
-  - name: "new_sales"
-    columns:
-    - name: "tx_date"
-      dataType:
-        type: "Date"
-    - name: "amount"
-      dataType:
-        type: "Integer"
-    type: "table"
-- name: "ayush_demos.demos"
-  database: "ayush_demos"
-  schema: "demos"
-  tables:
   - name: "customer"
     columns:
     - name: "customer_id"
@@ -35,4 +22,13 @@ sources:
     - name: "city"
       dataType:
         type: "String"
-    type: "table"    
+    type: "table"
+  - name: "new_sales"
+    columns:
+    - name: "tx_date"
+      dataType:
+        type: "Date"
+    - name: "amount"
+      dataType:
+        type: "Integer"
+    type: "table"
