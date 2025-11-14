@@ -23,37 +23,7 @@ functions:
   airflowFunctions: {}
   businessRules: {}
 subgraphs: {}
-sqlModels:
-  .prophecy/metadata/sqlmodels/p1__Aggregate_0:
-    name: p1__Aggregate_0
-    schema: null
-    description: null
-    author: g.ayush@prophecy.io
-    files:
-    - models/p1/p1__Aggregate_0.sql
-    - .prophecy/ide/models/p1__Aggregate_0.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-11-13 04:39:05'
-  .prophecy/metadata/sqlmodels/p1__Aggregate_1:
-    name: p1__Aggregate_1
-    schema: null
-    description: null
-    author: g.ayush@prophecy.io
-    files:
-    - models/p1/p1__Aggregate_1.sql
-    - .prophecy/ide/models/p1__Aggregate_1.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2025-11-13 04:39:05'
+sqlModels: {}
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
@@ -124,6 +94,30 @@ sqlSources:
       author: g.ayush@prophecy.io
       createdAt: '2025-11-14 06:13:20'
       tableType: table
+    - name: tile
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields:
+        - name: region
+          dataType:
+            type: String
+        - name: category
+          dataType:
+            type: String
+        - name: customer_id
+          dataType:
+            type: String
+        - name: sale_date
+          dataType:
+            type: Date
+        - name: sale_amount
+          dataType:
+            type: Bigint
+      description: null
+      author: g.ayush@prophecy.io
+      createdAt: '2025-11-14 07:36:27'
+      tableType: table
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
@@ -165,7 +159,6 @@ sqlOrchestratorPipelines:
     files:
     - models/p1/p1__Aggregate_1.sql
     - models/p1/schema.yml
-    - models/p1/p1__Aggregate_0.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-13 02:59:49'
